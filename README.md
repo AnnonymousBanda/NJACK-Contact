@@ -5,4 +5,4 @@ NJACK website contact page clone using HTML and CSS
 https://annonymousbanda.github.io/NJACK-Contact/
 
 # Animated Background
-JS code from https://codepen.io/jkiss/pen/OVEeqK
+JS code from https://codepen.io/jkiss/pen/OVEeqK for animated website
