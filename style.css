@@ -8,11 +8,15 @@
     font-family: "Josefin Sans";
     text-decoration: none;
     scroll-behavior: smooth;
+
+    background-color: transparent;
+
+    -webkit-box-sizing: border-box;
 }
 
 :root
 {
-    --bg-color: #0d0d0d;
+    --bg-color: #000;
     --bg-trans-color: rgba(141, 147, 158, 0.15);
     --text-color: #dcdcdc;
     --main-color: #ff9f69;
@@ -28,6 +32,19 @@ body
     padding: 50px 50px 25px 50px;
     width: 100vw;
     height: 100vh;
+}
+
+canvas
+{
+    background-color: var(--bg-color);
+    
+    position: fixed; 
+    top: 0; 
+    right: 0;
+    width: 100vw; 
+    height: 100vh; 
+    
+    z-index: -1;
 }
 
 
@@ -130,6 +147,7 @@ form .input
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: transparent;
 }
 
 @media (max-width: 768px)
@@ -137,6 +155,7 @@ form .input
     .content
     {
         display: block;
+        background-color: transparent;
     }
     
     .logo, .form
@@ -148,7 +167,7 @@ form .input
     }
 }
 
-@media (max-width: 560px)
+@media (max-width: 575px)
 {
     #drop-down
     {
