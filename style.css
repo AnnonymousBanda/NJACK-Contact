@@ -17,10 +17,9 @@
 :root
 {
     --bg-color: #000;
-    --bg-trans-color: rgba(141, 147, 158, 0.15);
+    --bg-trans-color: rgba(141, 147, 158, 0.2);
     --text-color: #dcdcdc;
     --main-color: #ff9f69;
-    --second-color: #8D939E;
 
     --corner-radius: 10px;
 }
@@ -29,9 +28,6 @@ body
 {
     color: var(--text-color);
     background: var(--bg-color);
-    padding: 50px 50px 25px 50px;
-    width: 100vw;
-    height: 100vh;
 }
 
 canvas
@@ -41,8 +37,6 @@ canvas
     position: fixed; 
     top: 0; 
     right: 0;
-    width: 100vw; 
-    height: 100vh; 
     
     z-index: -1;
 }
@@ -50,7 +44,7 @@ canvas
 
 nav
 {
-    padding: 8px 37px;
+    padding: 8px 35px;
     background-color: var(--bg-color);
 
     position: fixed;
@@ -84,17 +78,6 @@ nav .navigators a
     color: var(--main-color);
 }
 
-
-form
-{
-    padding: 25px 20px;
-    margin: 80px 0px;
-    width: 350px;
-
-    background-color: var(--bg-trans-color);
-    border-radius: var(--corner-radius);
-}
-
 #message
 {
     width: 306px;
@@ -102,7 +85,7 @@ form
 
 form *
 {
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 24px;
 }
 
@@ -113,11 +96,6 @@ form .input
     background-color: var(--bg-trans-color);
     border-radius: var(--corner-radius);
     border: 2px var(--main-color) solid;
-}
-
-.logo img
-{
-    width: 400px;
 }
 
 #send
@@ -139,27 +117,45 @@ form .input
     justify-content: center;
 }
 
+.logo img
+{
+    width: 450px;
+}
 
 .content
 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: transparent;
 }
 
+form
+{
+    padding: 25px 20px;
+    width: 350px;
+
+    background-color: var(--bg-trans-color);
+    border-radius: var(--corner-radius);
+}
+
 @media (max-width: 768px)
 {
     .content
     {
-        display: block;
-        background-color: transparent;
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .logo, .form
     {
+        width: 100vw;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -185,43 +181,42 @@ form .input
         flex-direction: column;
         gap: 20px;
         position: fixed;
-        top: 8px;
+        top: 22px;
         right: 20px;
-        padding: 20px;
+        padding: 10px;
         border-radius: var(--corner-radius);
         background-color: var(--bg-color);
         border: 2px var(--main-color) solid;
     }
+
+    .logo h1
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px)
+{    
     .logo img 
     {
-        width: 300px;
-    }
-
-    form
-    {
-        width: 300px;
-    }
-
-    #message
-    {
-        width: 256px;
+        width: 100%;
     }
 }
 
 @media (max-width: 375px)
 {
-    .logo img 
-    {
-        width: 250px;
-    }
-
     form
     {
-        width: 250px;
+        width: 300px;
+    }
+
+    .form input
+    {
+        width: 175px;
     }
 
     #message
     {
-        width: 206px;
+        width: 256px;
     }
 }
