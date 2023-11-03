@@ -161,6 +161,11 @@ form
         justify-content: center;
         flex-direction: column;
     }
+
+    .logo h1
+    {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 575px)
@@ -191,7 +196,7 @@ form
 
     .logo h1
     {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
