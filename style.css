@@ -148,6 +148,19 @@ form
     border-radius: var(--corner-radius);
 }
 
+/* footer h1
+{
+    padding: 10px 0px;
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+} */
+
 @media (max-width: 990px)
 {
     .logo h1
